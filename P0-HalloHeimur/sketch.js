@@ -7,5 +7,5 @@ function setup(){
     textSize(23);
     text("Halló heimur",90,160);
     rect(150,50,50,50);
-    ellipse(150,200,50,50);}
+    ellipse(150,200,50,50);
 }// Hér kemur kóðinn þinn:
