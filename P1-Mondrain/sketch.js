@@ -1,10 +1,11 @@
 function setup(){
-    createCanvas(300,300);
-    background(255,180,25);
-    fill(150);
-    ellipse(150,100,50,50);
-    fill(50);
-    textSize(23);
-    text("Halló heimur",90,160);
-    rect(150,50,50,50);
-    ellipse(150,200,50,50);}
+    createCanvas(900,900);
+    background(255,225,225);
+    fill(255,0,0);
+    rect(0,0,400,500);
+    fill(255);
+    rect(0,500,400,400);
+    fill(1);
+    rect(400,400,500,500);
+    Fill(0);
+  }
