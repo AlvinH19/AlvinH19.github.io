@@ -2,9 +2,9 @@
 function setup(){
     createCanvas(900,900);
     background(255,255,255);
-    strokeWeight(15);
+    strokeWeight(15); // 
     fill(255,0,0);
-    rect(0,0,400,500);
+    rect(0,0,400,500);//hyrningar
     fill(255);
     rect(0,500,400,400);
     fill(255);
