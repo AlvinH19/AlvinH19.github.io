@@ -6,6 +6,7 @@ var y = 150;
 
 function setup(){
   createCanvas (300,300);
+
 }
 
 function draw(){
@@ -21,8 +22,10 @@ fill(80,100,255);
 ellipse(augaV, height/2, eyeSize, eyeSize);
 fill(80,100,255);
 ellipse(augaH, height/2, eyeSize, eyeSize);
+
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 }
+
 
 function mousePressed(){
   //Í hvert sinn sem músinni er smellt fá breyturnar ný gildi.
