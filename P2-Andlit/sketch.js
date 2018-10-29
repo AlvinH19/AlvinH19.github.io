@@ -15,6 +15,7 @@ function draw(){
   ellipse(x, y, faceWidth, faceHeight);
 
   arc(158, 165, 30, 16, 2, PI + QUARTER_PI);
+  arc(169, 185, 70, 10, 2, PI);
 
 var augaV = width/2 - faceWidth*0.25;
 var augaH = width/2 + faceWidth*0.25;
