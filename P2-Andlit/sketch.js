@@ -19,14 +19,19 @@ function draw(){
 
 var augaV = width/2 - faceWidth*0.25;
 var augaH = width/2 + faceWidth*0.25;
-fill(80,100,255);
+var augastV = width/2 - faceWidth*0.28;
+var augastH = width/2 + faceWidth*0.28;
+fill(300);
 ellipse(augaV, height/2, eyeSize, eyeSize);
-fill(80,100,255);
+fill(300);
 ellipse(augaH, height/2, eyeSize, eyeSize);
+fill(80,100,255);
+ellipse(augastV, height/2, eyeSize, eyeSize);
+fill(80,100,255);
+ellipse(augastH, height/2, eyeSize, eyeSize);
 
   //.....kóði sem staðsetur augun m.v. x, y, faceWidth og faceHeight ætti að koma hér.
 }
-
 
 function mousePressed(){
   //Í hvert sinn sem músinni er smellt fá breyturnar ný gildi.
