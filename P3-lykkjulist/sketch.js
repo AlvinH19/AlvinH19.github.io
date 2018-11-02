@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(200,300);
+  createCanvas(300,300);
   background(255, 215, 0);
   fill(0);
   colorMode(HSB);
@@ -46,5 +46,25 @@ function draw(){
     fill(random(0,360),75,100);
   for(var i = 0; i < 15 ; i = i + 1) {
     ellipse(190, 11 + i*20, 15, 15);
+      }
+    fill(random(0,360),75,100);
+  for(var i = 0; i < 15 ; i = i + 1) {
+    ellipse(210, 11 + i*20, 15, 15);
+      }
+    fill(random(0,360),75,100);
+  for(var i = 0; i < 15 ; i = i + 1) {
+    ellipse(230, 11 + i*20, 15, 15);
+      }
+    fill(random(0,360),75,100);
+  for(var i = 0; i < 15 ; i = i + 1) {
+    ellipse(250, 11 + i*20, 15, 15);
+      }
+    fill(random(0,360),75,100);
+  for(var i = 0; i < 15 ; i = i + 1) {
+    ellipse(270, 11 + i*20, 15, 15);
+      }
+    fill(random(0,360),75,100);
+  for(var i = 0; i < 15 ; i = i + 1) {
+    ellipse(290, 11 + i*20, 15, 15);
   }
 }
