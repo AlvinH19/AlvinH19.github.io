@@ -14,10 +14,10 @@ bakgrunnur = loadImage('assets/bakgrunnur.jpg'); // https://www.shutterstock.com
 }
 
 function setup() {
-	createCanvas(600,500);
+	createCanvas(700,500);
 	spadiY = height - 45;
 	rectMode(CENTER);
-	textFont("Menlo",14);
+	textFont("Menlo",16);
 	textStyle(BOLD);
 
 }
@@ -43,9 +43,9 @@ function draw() {
 	// Teikna boltann, spaðann og stigin
   colorMode(HSB);
   fill(280, 204, 100);
-  rect(x, y, boltiStaerd, boltiStaerd);
+  ellipse(x, y, boltiStaerd, boltiStaerd);
 	rect(mouseX,spadiY ,spadiBreidd,spadiThykkt);
 	fill('rgba(100%,0%,100%,0.5)');
-	text("Stig: " + stig,20,20);
+	text("Stig: " + stig,25,25);
 
 }
