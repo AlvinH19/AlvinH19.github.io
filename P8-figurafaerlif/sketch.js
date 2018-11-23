@@ -3,37 +3,22 @@ var Uaquok1, Uaquok2, Uaquok3
 function setup() {
   createCanvas(600,600);
   Uaquok1 = new Uaquok(150,150,150,100,150);
-  Uaquok2 = new Uaquok(200,200,30,120,100);
+  Uaquok2 = new Uaquok(100,100,30,120,100);
   Uaquok3 = new Uaquok(350,300,250,150,50);
 }
 
 function draw() {
   background(150,259,0);
-  fill(255,200,0);
+  fill(150,280,100);
 	ellipse(300,300,500,500);
-	if(fjarlægð(Uaquok1.x,Uaquok1.y,300,300) > 250){
-		Uaquok1.blink(); //finna eitthvað nýtt sem hann geris (blink)
-  }
-else {
   Uaquok1.move();
-}
-Uaquok1.show();
-if(fjarlægð(Uaquok2.x,Uaquok2.y,300,300) > 250){
-  Uaquok2.blink();
-}
-else {
+  Uaquok1.show();
   Uaquok2.move();
-}
-Uaquok2.show();
-if(fjarlægð(Uaquok3.x,Uaquok3.y,300,300) > 250){
-  Uaquok3.blink();
-}
-else {
+  Uaquok2.show();
   Uaquok3.move();
+  Uaquok3.show();
 }
-Uaquok3.show();
 
-}
 class Uaquok{
   constructor(x,y,bukur,haus,litur){
     this.x = x;
@@ -42,14 +27,16 @@ class Uaquok{
     this.haus = haus;
     this.dir = random(0,2*PI);
     this.speed = random(0,5);
-    this.eyeColor = color(100,100,100);
+    this.bukurlitur = color(100,100,100);
   }
 
 // Uaquok
 show() {
   rectMode(CENTER);
+  strokeWeight(2);
+  stroke(0);
 	// búkur
-	fill(70,150,0)
+	fill(this.bukurlitur);
 	ellipse(this.x,this.y,-250,this.bukur)
   // haus
 	fill(70,150,0)
@@ -72,15 +59,22 @@ show() {
  move(){
 		this.x = this.x + this.speed*cos(this.dir);
 		this.y = this.y + this.speed*sin(this.dir);
-		this.speed = this.speed/1.05;
-		if(this.speed < 0.1){
+		this.speed = this.speed/1.07;
+		if(this.speed < 0.3){
 			this.dir = random(0,2*PI);
-			this.speed = random(1,5);
+			this.speed = random(1,7);
     }
+    if (fjarlægð(this.x,this.y,width/2,height/2) > 250){
+      this.litur();
+      this.dir = atan((this.y - height/2)/(this.x-width/2));
+      if(this.x - width/2 > 0){
+        this.dir = this.dir + PI;
+    }
+  }
 }
 
-blink(){
-		this.eyeColor = color(random(255), random(255), random(255));
+litur(){
+		this.bukurlitur = color(random(255), random(255), random(255));
 
   }
 }
