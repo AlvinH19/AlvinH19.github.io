@@ -8,8 +8,8 @@ function setup() {
 }
 
 function draw() {
-  background(150,259,0);
-  fill(150,280,100);
+  background(50,150,0);
+  fill(70,120,100);
 	ellipse(300,300,500,500);
   for (var i = 0; i < Uaquok.length; i = i+1){
    	Uaquoklisti[i].move();
