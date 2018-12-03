@@ -5,24 +5,24 @@ Til þess að læra að gera eitthvað, prófaðu að leita á google af því s
 
 body {
   background-color: #6600cc;
-  color: #ff6600;
+  color: 	#FFA500;
   text-align: center;
 }
 
 h1{
-  color: #ff6600;
+  color: 	#FFA500;
   background-color: #6600cc;
   text-align: center;
 }
 
 a{
-  color: #ff9900;
+  color: 	#FFA500;
   text-align: left;
 
 }
 
 a:hover {
-  color: #ff6600;
+  color: 	#FF8C00;
   font-size: 30px;
 
 }
